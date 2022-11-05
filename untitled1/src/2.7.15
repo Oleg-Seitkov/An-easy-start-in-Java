@@ -1,0 +1,27 @@
+На вход подаются два слова на одной строке, разделённые пробелом. Выведите true, если они идут по алфавиту, и false, если нет. Гарантируется, что слова начинаются с разных букв.
+
+Примечание. Использовать условные конструкции для решения этой задачи не нужно.
+
+Sample Input 1:
+
+task angel
+Sample Output 1:
+
+false
+Sample Input 2:
+
+moment twix
+Sample Output 2:
+
+true
+---------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+       String x = sc.next();
+       String y = sc.next();
+        System.out.println(x.charAt(0) < y.charAt(0));
+        sc.close();
+   }
+}

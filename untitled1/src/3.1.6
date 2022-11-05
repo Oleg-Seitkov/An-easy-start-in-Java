@@ -1,0 +1,27 @@
+На первой строке подаётся пароль, хранящийся в базе данных, на второй - пароль, введённый пользователем.
+
+Выведите на печать фразу "Access is granted", если пользователь ввёл верный пароль, и "Access is denied" - если нет.
+
+Sample Input:
+
+111111
+111111
+Sample Output:
+
+Access is granted
+-----------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+       String x = sc.nextLine();
+       String y = sc.nextLine();
+       boolean result=x.equals(y);
+       if (result==true) {
+    System.out.println("Access is granted");
+} else {
+    System.out.println("Access is denied");
+}
+sc.close();
+    }
+}

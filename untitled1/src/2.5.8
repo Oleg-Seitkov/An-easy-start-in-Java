@@ -1,0 +1,24 @@
+На вход подаются два положительных действительных числа - стороны прямоугольника. Посчитайте его площадь и периметр и выведите на отдельных строках.
+
+Sample Input:
+
+5 10
+Sample Output:
+
+50.0
+30.0
+
+-------------------------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+       Double x = in.nextDouble();
+        Double y = in.nextDouble();
+        Double s=x*y;
+        Double p= (x + y) * 2;
+        System.out.println(s);
+        System.out.println(p);
+in.close();
+    }
+}

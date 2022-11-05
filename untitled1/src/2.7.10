@@ -1,0 +1,23 @@
+На вход подаётся строка, а затем целое число n > 0. Выведите n- й символ с начала строки.
+
+Sample Input:
+
+This is a string
+1
+Sample Output:
+
+T
+-------------------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+       String word = sc.nextLine();
+        String n=sc.nextLine();
+        Integer num = Integer.valueOf(n);
+        int x = word.length();
+        char letter = word.charAt(num-1);
+        System.out.println(letter);
+        sc.close();
+   }
+}

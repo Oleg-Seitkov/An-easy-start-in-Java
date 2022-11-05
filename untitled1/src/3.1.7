@@ -1,0 +1,22 @@
+Выведите на печать наибольшее из трёх целых чисел.
+
+Sample Input:
+
+5 6 12
+Sample Output:
+
+12
+--------------------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+      System.out.print(Math.max(a, Math.max(b,c)));
+
+sc.close();
+    }
+}

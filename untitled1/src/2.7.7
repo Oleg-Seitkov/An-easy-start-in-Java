@@ -1,0 +1,22 @@
+На вход подаётся строка текста. Выведите её первый и последний элемент в одну строку через пробел.
+
+Sample Input:
+
+abracadabra
+Sample Output:
+
+a a
+----------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+       String word = sc.nextLine();
+int x = word.length();
+        char letter_0 = word.charAt(0);
+        int last=x-1;
+        char letter_last = word.charAt(last);
+System.out.println(letter_0+" "+letter_last);
+        sc.close();
+   }
+}

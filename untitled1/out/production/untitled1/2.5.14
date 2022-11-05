@@ -1,0 +1,23 @@
+На вход подаётся целое число. Найдите его последнюю цифру.
+
+
+
+Примечание. Для вычислений может понадобиться метод Math.abs(x), возвращающий абсолютное значение (модуль) числа. Это один из множества методов, предоставляемых классом Math. Более подробно этот класс будет рассмотрен в следующих модулях.
+
+Sample Input:
+
+365
+Sample Output:
+
+5
+
+---------------------------------------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       System.out.print(Math.abs(a%10));
+       in.close();
+   }
+}
