@@ -1,0 +1,75 @@
+На вход подаётся три целых числа. Выведите максимальное чётное из них. Если чётных чисел нет, выведите "Чётных чисел нет".
+
+Sample Input:
+
+5 10 15
+Sample Output:
+
+10
+
+-----------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int max;
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int c = sc.nextInt();
+        if (a % 2 != 0 && b % 2 != 0 && c % 2 != 0) {
+            System.out.println("Чётных чисел нет");
+        }else {
+            if (a % 2 == 0 && b % 2 == 0 && c % 2 == 0) {// все четные, ищем макс}
+                if (a >= b) {
+                    max = a;
+                } else {
+                    max = b;
+                }
+
+                if (c >= max) {
+                    max = c;
+                }   System.out.println(max);
+
+            }
+
+            if (a % 2 == 0 && b % 2 == 0 && c%2!=0) { // два четных
+                if (a >= b) {
+                    System.out.println(a);
+                } else {
+                    System.out.println(b);
+                }
+            }
+
+                if (a % 2 == 0 && c % 2 == 0  && b%2!=0) {
+                    if (a >= c) {
+                        System.out.println(a);
+                    } else {
+                        System.out.println(c);
+                    }
+                }
+
+                if (c % 2 == 0 && b % 2 == 0 && a%2!=0) {
+                    if (c >= b) {
+                        System.out.println(c);
+                    } else {
+                        System.out.println(b);
+                    }
+                }
+                else{
+            if (a % 2 == 0 && b%2!=0 && c%2!=0) {
+                        System.out.println(a);
+                    }
+            if (b % 2 == 0 && a%2!=0 && c%2!=0) {
+                        System.out.println(b);
+                    }
+            if (c % 2 == 0  && b%2!=0 && a%2!=0) {
+                        System.out.println(c);
+                    }
+                }
+            }
+
+        }
+
+
+    }

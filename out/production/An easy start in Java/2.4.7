@@ -1,0 +1,27 @@
+Напишите программу, которая принимает три числа - год, месяц и день и выводит на печать фразу:
+
+DD:MM:YYYY.
+
+Проверять валидность даты не требуется.
+
+Sample Input:
+
+2021
+01
+30
+Sample Output:
+
+30:01:2021
+----------------------------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String YYYY = in.nextLine();
+        String MM = in.nextLine();
+        String DD = in.nextLine();
+
+System.out.println(DD + ":" + MM + ":" + YYYY);
+
+    }
+}

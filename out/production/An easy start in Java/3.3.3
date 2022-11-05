@@ -1,0 +1,20 @@
+На вход подаётся три целых числа. Выведите среднее из них (т.е. не минимальное и не максимальное).
+
+Sample Input:
+
+5 10 11
+Sample Output:
+
+10
+----------------
+import java.util.Scanner;
+class Example {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(),b = sc.nextInt(),c = sc.nextInt();
+        int s =(a + b + c)-(Math.max(Math.max(a,b),c) + Math.min(Math.min(a,b),c));
+
+        System.out.print(s);
+sc.close();
+    }
+}

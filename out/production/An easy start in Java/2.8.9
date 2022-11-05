@@ -1,0 +1,25 @@
+На вход подаются целые числа x и y. Выведите их сумму и разность в формате, соответствующем примеру.
+
+Sample Input:
+
+10 5
+Sample Output:
+
+Сложение: 10 + 5 = 15
+Вычитание: 10 - 5 = 5
+
+----------------------------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+       int x = sc.nextInt();
+int y = sc.nextInt();
+        int s=x+y;
+        int r=x-y;
+        System.out.println("Сложение: "+x+" + "+y+" = "+s);
+        System.out.println("Вычитание: "+x+" - "+y+" = "+r);
+sc.close();
+
+    }
+}
