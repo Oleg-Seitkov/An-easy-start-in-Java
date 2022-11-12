@@ -6,12 +6,8 @@ class MySolution {
 		String a=A.toLowerCase();
 		String B= sc.nextLine();
 		String b= B.toLowerCase();
-
-
-
-			System.out.print("YES");
-
-			System.out.print("NO");
-		}
+		boolean value1 = a.contains(b);
+		System.out.println(value1);
+		sc.close();
 	}
-}
+	}

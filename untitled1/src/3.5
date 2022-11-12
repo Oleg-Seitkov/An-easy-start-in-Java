@@ -1,0 +1,55 @@
+На вход подаётся  целое число. Выведите "YES", если введено трёхзначное положительное число, а в противном случае - "NO".
+
+Sample Input 1:
+
+125
+Sample Output 1:
+
+YES
+Sample Input 2:
+
+1
+Sample Output 2:
+
+NO
+-----------------------
+import java.util.Scanner;
+class MySolution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if (a > 0 && a >= 100 && a < 1000) {
+            System.out.print("YES");
+        } else {
+            System.out.print("NO");
+        sc.close;
+        }
+    }
+}
+
+--------------------------------------------
+На вход подается строка, а затем слово. Выведите true, если слово содержится в строке, и false - если нет, без учёта регистров.
+
+Sample Input:
+
+abracadabra
+Cadabra
+Sample Output:
+
+true
+
+import java.util.Scanner;
+class MySolution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String A = sc.nextLine();
+		String a=A.toLowerCase();
+		String B= sc.nextLine();
+		String b= B.toLowerCase();
+		boolean value1 = a.contains(b);
+		System.out.println(value1);
+		sc.close();
+	}
+	}
+	
+	-----------------------------------------
