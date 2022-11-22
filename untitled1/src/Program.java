@@ -2,13 +2,18 @@ import java.util.Scanner;
 class MySolution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a = Math.abs(sc.nextInt());
-		int b= Math.abs(sc.nextInt());
-		if (a<100 || a>999) {
-			System.out.println("error");
+		double a = sc.nextDouble();
+		double b= sc.nextDouble();
+		if (a<b) {
+			System.out.println("<");
 		} else {
-			boolean c=((a%=100)/10==b);
-			System.out.println(c);
+
+
+			if (a > b) {
+				System.out.println(">");
+			} else {
+				System.out.println("=");
+			}
 		}
 		sc.close();
 	}
